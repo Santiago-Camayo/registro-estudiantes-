@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Sistema de Estudiantes</title>
+    <!-- Conecta los estilos del login -->
+    <link rel="stylesheet" href="login-styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Registro</h1>
+        <h2>Iniciar Sesión</h2>
+        
+        <!-- Donde aparecen mensajes -->
+        <div id="mensaje"></div>
+        
+        <!-- Formulario de login -->
+        <form>
+            <label>Usuario:</label>
+            <input type="text" id="usuario" placeholder="Solo letras">
+            
+            <label>Contraseña:</label>
+            <input type="password" id="password" placeholder="Solo números">
+            
+            <button type="button" onclick="validarLogin()">Entrar</button>
+        </form>
+        
+        <!-- Datos para probar -->
+        <div class="info">
+            <p><strong>Datos de prueba:</strong></p>
+            <p>Usuario: santiago</p>
+            <p>Contraseña: 1234</p>
+        </div>
+    </div>
+    
+    <!-- Conecta el JavaScript del login -->
+    <script src="login-script.js"></script>
+</body>
+</html>
